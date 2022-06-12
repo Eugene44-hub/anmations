@@ -1,0 +1,33 @@
+.circles {
+    animation: example 3s infinite linear
+}
+
+.circleContainer {
+    animation: container 2s infinite linear alternate
+}
+
+@keyframes container {
+    from {
+        /* opacity: 1; */
+        transform: scale(1);
+    }
+    to {
+        /* opacity: 0; */
+        transform: scale(2);
+    }
+}
+
+.App {
+    /* background-color: var(--color); */
+}
+
+@keyframes example {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(--scale);
+    }
+}
